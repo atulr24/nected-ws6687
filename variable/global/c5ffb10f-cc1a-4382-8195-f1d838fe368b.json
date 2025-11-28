@@ -1,0 +1,27 @@
+{
+ "entityType": "variable",
+ "data": {
+  "createdAt": "2025-11-28T06:23:35.841Z",
+  "updatedAt": "2025-11-28T06:23:35.841Z",
+  "isDeleted": false,
+  "commitId": "",
+  "status": "",
+  "lastVersion": "",
+  "isLive": null,
+  "commitInfo": {
+   "timeStamp": "0001-01-01T00:00:00Z"
+  },
+  "entityId": "c5ffb10f-cc1a-4382-8195-f1d838fe368b",
+  "name": "globalName",
+  "category": "globalVar",
+  "scope": "workspace",
+  "dataType": "string",
+  "value": {
+   "data": "Atul",
+   "isSecret": false,
+   "canReset": false
+  },
+  "isFunction": false,
+  "functionName": ""
+ }
+}

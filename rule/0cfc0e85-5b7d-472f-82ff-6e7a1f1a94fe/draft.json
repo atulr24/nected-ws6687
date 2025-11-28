@@ -1,0 +1,301 @@
+{
+ "entityType": "rule",
+ "category": "decisionTable",
+ "data": {
+  "createdAt": "2025-11-28T06:21:51.846Z",
+  "updatedAt": "2025-11-28T06:23:06.779271Z",
+  "isDeleted": false,
+  "testedAt": "0001-01-01T00:00:00Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "0cfc0e85-5b7d-472f-82ff-6e7a1f1a94fe",
+  "name": "DT",
+  "commitId": "commit-77ded17e-0255-4c7a-91cc-43ded75af967",
+  "status": "draft",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-28 06:21:51",
+   "timeStamp": "2025-11-28T06:21:51.846796699Z"
+  },
+  "customInput": {
+   "name": {
+    "name": "name",
+    "dataType": "string",
+    "isOptional": false,
+    "isNullable": false,
+    "isCaseSensitive": false,
+    "attribute": "",
+    "sourceType": "",
+    "executedValue": "Atul",
+    "config": null,
+    "next": "",
+    "previous": "",
+    "schemaId": ""
+   }
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": {
+    "rule_01": {
+     "nextId": "g_7KBYsC",
+     "prevId": "",
+     "firstOutputData": "output_sw8T86",
+     "isEnabled": true
+    },
+    "g_7KBYsC": {
+     "nextId": "",
+     "prevId": "rule_01",
+     "firstOutputData": "output_124Vb5",
+     "isEnabled": true
+    }
+   },
+   "properties": {
+    "rule_03": {
+     "nextId": "",
+     "prevId": "",
+     "type": "simpleCondition"
+    }
+   },
+   "results": {
+    "result_VPBfQW": {
+     "nextId": "result_rMWBJa",
+     "prevId": "result_m3uw1N",
+     "dataType": "string",
+     "keyName": "stringOp2",
+     "schemaId": ""
+    },
+    "result_m3uw1N": {
+     "nextId": "result_VPBfQW",
+     "prevId": "",
+     "dataType": "string",
+     "keyName": "stringOp",
+     "schemaId": ""
+    },
+    "result_rMWBJa": {
+     "nextId": "",
+     "prevId": "result_VPBfQW",
+     "dataType": "date",
+     "keyName": "Date",
+     "schemaId": ""
+    }
+   },
+   "firstRow": "rule_01",
+   "firstProperty": "rule_03",
+   "firstResult": "result_m3uw1N",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": {
+     "output_pqYzRi": {
+      "name": "Date",
+      "dataType": "date",
+      "returnType": "",
+      "value": null,
+      "next": "",
+      "executedValue": "2025-11-28",
+      "attribute": "Today",
+      "source": "systemVar",
+      "schemaId": ""
+     },
+     "output_sw8T86": {
+      "name": "stringOp",
+      "dataType": "string",
+      "returnType": "",
+      "value": null,
+      "next": "output_I2Wnqm",
+      "executedValue": "Atul",
+      "attribute": "name",
+      "source": "customInput",
+      "schemaId": ""
+     },
+     "output_yAM2Wh": {
+      "name": "stringOp2",
+      "dataType": "string",
+      "returnType": "",
+      "value": "Value",
+      "next": "output_Vx2NeQ",
+      "executedValue": "Value",
+      "attribute": "",
+      "source": "",
+      "schemaId": ""
+     },
+     "output_124Vb5": {
+      "name": "stringOp",
+      "dataType": "string",
+      "returnType": "",
+      "value": null,
+      "next": "output_yAM2Wh",
+      "executedValue": "Value",
+      "attribute": "ExecutionId",
+      "source": "systemVar",
+      "schemaId": ""
+     },
+     "output_I2Wnqm": {
+      "name": "stringOp2",
+      "dataType": "string",
+      "returnType": "",
+      "value": null,
+      "next": "output_pqYzRi",
+      "executedValue": "staging",
+      "attribute": "Environment",
+      "source": "systemVar",
+      "schemaId": ""
+     },
+     "output_Vx2NeQ": {
+      "name": "Date",
+      "dataType": "date",
+      "returnType": "",
+      "value": null,
+      "next": "",
+      "executedValue": null,
+      "attribute": "NULL",
+      "source": "systemVar",
+      "schemaId": ""
+     }
+    },
+    "actionNode": {
+     
+    },
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_03": {
+     "value": null,
+     "sourceType": "customInput",
+     "name": "",
+     "operator": "",
+     "dataType": "string",
+     "nodeType": "params",
+     "attribute": "name",
+     "query": "",
+     "parent": "",
+     "children": null,
+     "leftNode": null,
+     "rightNode": null,
+     "siblingIndex": 1,
+     "returnType": ""
+    },
+    "c_SYMtFT": {
+     "value": null,
+     "sourceType": "",
+     "name": "Any",
+     "operator": "ex",
+     "dataType": "string",
+     "nodeType": "condition",
+     "attribute": "",
+     "query": "",
+     "parent": "g_7KBYsC",
+     "children": null,
+     "leftNode": [
+      "rule_03"
+     ],
+     "rightNode": [],
+     "siblingIndex": 1,
+     "returnType": ""
+    },
+    "g_7KBYsC": {
+     "value": null,
+     "sourceType": "",
+     "name": "",
+     "operator": "and",
+     "dataType": "",
+     "nodeType": "group",
+     "attribute": "",
+     "query": "",
+     "parent": "",
+     "children": [
+      "c_SYMtFT"
+     ],
+     "leftNode": null,
+     "rightNode": null,
+     "siblingIndex": 1,
+     "returnType": ""
+    },
+    "rule_01": {
+     "value": null,
+     "sourceType": "",
+     "name": "",
+     "operator": "and",
+     "dataType": "",
+     "nodeType": "group",
+     "attribute": "",
+     "query": "",
+     "parent": "",
+     "children": [
+      "rule_02"
+     ],
+     "leftNode": null,
+     "rightNode": null,
+     "siblingIndex": 1,
+     "returnType": ""
+    },
+    "rule_02": {
+     "value": "",
+     "sourceType": "",
+     "name": "",
+     "operator": "any",
+     "dataType": "string",
+     "nodeType": "condition",
+     "attribute": "",
+     "query": "",
+     "parent": "rule_01",
+     "children": null,
+     "leftNode": [
+      "rule_03"
+     ],
+     "rightNode": [],
+     "siblingIndex": 1,
+     "returnType": ""
+    }
+   },
+   "startNode": ""
+  },
+  "firstCustomInput": "name",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "first",
+  "version": "draft",
+  "comment": "",
+  "type": "decisionTable",
+  "dataSetId": "",
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": null,
+  "schemaVersion": "0.1.1"
+ }
+}
