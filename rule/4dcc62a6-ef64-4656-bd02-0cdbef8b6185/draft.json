@@ -3,14 +3,14 @@
  "category": "simpleRule",
  "data": {
   "createdAt": "2025-11-28T06:25:42.723Z",
-  "updatedAt": "2025-11-28T06:25:59.736052Z",
+  "updatedAt": "2025-11-28T06:44:23.107879Z",
   "isDeleted": false,
-  "testedAt": "0001-01-01T00:00:00Z",
+  "testedAt": "2025-11-28T06:44:23.107Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "4dcc62a6-ef64-4656-bd02-0cdbef8b6185",
   "name": "sr",
   "commitId": "commit-fa07d5d9-77ee-4943-94be-49156a0fe054",
-  "status": "draft",
+  "status": "tested",
   "lastVersion": "",
   "isLive": false,
   "commitInfo": {
@@ -26,8 +26,10 @@
     "isCaseSensitive": false,
     "attribute": "",
     "sourceType": "",
-    "executedValue": null,
-    "config": null,
+    "executedValue": "2025-11-28",
+    "config": {
+     
+    },
     "next": "",
     "previous": "",
     "schemaId": ""
@@ -59,13 +61,29 @@
   },
   "conditions": {
    "nodes": {
-    "rhs_bjYdHh": {
+    "rule_03": {
+     "value": null,
+     "sourceType": "customInput",
+     "name": "",
+     "operator": "",
+     "dataType": "date",
+     "nodeType": "params",
+     "attribute": "Date",
+     "query": "",
+     "parent": "rule_02",
+     "children": null,
+     "leftNode": null,
+     "rightNode": null,
+     "siblingIndex": 1,
+     "returnType": ""
+    },
+    "rhs_Kvnsk6": {
      "value": null,
      "sourceType": "globalVar",
      "name": "",
      "operator": "",
      "dataType": "date",
-     "nodeType": "condition",
+     "nodeType": "params",
      "attribute": "globalDate",
      "query": "",
      "parent": "rule_02",
@@ -108,24 +126,8 @@
       "rule_03"
      ],
      "rightNode": [
-      "rhs_bjYdHh"
+      "rhs_Kvnsk6"
      ],
-     "siblingIndex": 1,
-     "returnType": ""
-    },
-    "rule_03": {
-     "value": null,
-     "sourceType": "customInput",
-     "name": "",
-     "operator": "",
-     "dataType": "date",
-     "nodeType": "params",
-     "attribute": "Date",
-     "query": "",
-     "parent": "rule_02",
-     "children": null,
-     "leftNode": null,
-     "rightNode": null,
      "siblingIndex": 1,
      "returnType": ""
     }
@@ -167,7 +169,7 @@
    "timeoutCron": 0
   },
   "isDemo": false,
-  "warnings": null,
+  "warnings": [],
   "schemaVersion": "0.1.1"
  },
  "dependencies": [
@@ -182,7 +184,7 @@
    "dependencyVersion": "live",
    "isDeleted": false,
    "createdAt": "2025-11-28T06:25:59.745341Z",
-   "updatedAt": "2025-11-28T06:25:59.745341Z"
+   "updatedAt": "2025-11-28T06:44:20.784864Z"
   }
  ]
 }
