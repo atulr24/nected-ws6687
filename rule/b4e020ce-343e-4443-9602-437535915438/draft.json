@@ -1,0 +1,188 @@
+{
+ "entityType": "rule",
+ "category": "simpleRule",
+ "data": {
+  "createdAt": "2025-11-28T06:43:23.52Z",
+  "updatedAt": "2025-11-28T06:43:45.953423Z",
+  "isDeleted": false,
+  "testedAt": "2025-11-28T06:43:45.952Z",
+  "publishedAt": "0001-01-01T00:00:00Z",
+  "entityId": "b4e020ce-343e-4443-9602-437535915438",
+  "name": "sr2",
+  "commitId": "commit-13bd1b6b-adf7-48d7-8374-bc5829764ffd",
+  "status": "tested",
+  "lastVersion": "",
+  "isLive": false,
+  "commitInfo": {
+   "title": "Created at 2025-11-28 06:43:23",
+   "timeStamp": "2025-11-28T06:43:23.520177441Z"
+  },
+  "customInput": {
+   "date": {
+    "name": "date",
+    "dataType": "date",
+    "isOptional": false,
+    "isNullable": false,
+    "isCaseSensitive": false,
+    "attribute": "",
+    "sourceType": "",
+    "executedValue": "2025-11-13",
+    "config": null,
+    "next": "",
+    "previous": "",
+    "schemaId": ""
+   }
+  },
+  "ruleChain": null,
+  "decisionTable": {
+   "rows": null,
+   "properties": null,
+   "results": null,
+   "firstRow": "",
+   "firstProperty": "",
+   "firstResult": "",
+   "firstAggOutputData": ""
+  },
+  "action": {
+   "then": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   },
+   "else": {
+    "outputData": null,
+    "actionNode": null,
+    "firstOutputData": "",
+    "firstActionNode": ""
+   }
+  },
+  "conditions": {
+   "nodes": {
+    "rule_01": {
+     "value": null,
+     "sourceType": "",
+     "name": "",
+     "operator": "",
+     "dataType": "",
+     "nodeType": "group",
+     "attribute": "",
+     "query": "",
+     "parent": "",
+     "children": [
+      "rule_02"
+     ],
+     "leftNode": null,
+     "rightNode": null,
+     "siblingIndex": 1,
+     "returnType": ""
+    },
+    "rule_02": {
+     "value": null,
+     "sourceType": "",
+     "name": "",
+     "operator": "eq",
+     "dataType": "date",
+     "nodeType": "condition",
+     "attribute": "",
+     "query": "",
+     "parent": "rule_01",
+     "children": null,
+     "leftNode": [
+      "rule_03"
+     ],
+     "rightNode": [
+      "rhs_gczq43"
+     ],
+     "siblingIndex": 1,
+     "returnType": ""
+    },
+    "rule_03": {
+     "value": null,
+     "sourceType": "customInput",
+     "name": "",
+     "operator": "",
+     "dataType": "date",
+     "nodeType": "params",
+     "attribute": "date",
+     "query": "",
+     "parent": "rule_02",
+     "children": null,
+     "leftNode": null,
+     "rightNode": null,
+     "siblingIndex": 1,
+     "returnType": ""
+    },
+    "rhs_gczq43": {
+     "value": null,
+     "sourceType": "globalVar",
+     "name": "",
+     "operator": "",
+     "dataType": "date",
+     "nodeType": "params",
+     "attribute": "globalDate",
+     "query": "",
+     "parent": "rule_02",
+     "children": null,
+     "leftNode": null,
+     "rightNode": null,
+     "siblingIndex": 1,
+     "returnType": ""
+    }
+   },
+   "startNode": "rule_01"
+  },
+  "firstCustomInput": "date",
+  "firstRuleChain": "",
+  "ruleSetPolicy": "",
+  "description": "",
+  "policy": "",
+  "version": "draft",
+  "comment": "",
+  "type": "simpleRule",
+  "dataSetId": "",
+  "ruleSet": null,
+  "settings": {
+   "startAt": "0001-01-01T00:00:00Z",
+   "endAt": "0001-01-01T00:00:00Z",
+   "event": null,
+   "api": {
+    "isEnabled": true,
+    "isPrivate": true
+   },
+   "isEnabled": true,
+   "auditIO": false,
+   "cachingInfo": {
+    "Enabled": false,
+    "Duration": {
+     "Value": 0,
+     "Unit": ""
+    },
+    "CacheKeys": ""
+   },
+   "timezone": "Asia/Calcutta",
+   "dateFormat": "in",
+   "timeout": 0,
+   "timeoutAsync": 0,
+   "timeoutCron": 0
+  },
+  "isDemo": false,
+  "warnings": [],
+  "schemaVersion": "0.1.1"
+ },
+ "dependencies": [
+  {
+   "entityCommitId": "commit-13bd1b6b-adf7-48d7-8374-bc5829764ffd",
+   "entityType": "rule",
+   "entityId": "b4e020ce-343e-4443-9602-437535915438",
+   "entityVersion": "draft",
+   "entityNodeId": "globalDate",
+   "dependencyType": "variable",
+   "dependencyId": "5b1f13f2-0803-481d-adae-b578166a6873",
+   "dependencyVersion": "live",
+   "isDeleted": false,
+   "createdAt": "2025-11-28T06:43:44.373335Z",
+   "updatedAt": "2025-11-28T06:43:44.373335Z"
+  }
+ ]
+}
