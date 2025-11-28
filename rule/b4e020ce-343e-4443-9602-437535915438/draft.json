@@ -3,14 +3,14 @@
  "category": "simpleRule",
  "data": {
   "createdAt": "2025-11-28T06:43:23.52Z",
-  "updatedAt": "2025-11-28T06:43:45.953423Z",
+  "updatedAt": "2025-11-28T06:57:08.36209Z",
   "isDeleted": false,
-  "testedAt": "2025-11-28T06:43:45.952Z",
+  "testedAt": "2025-11-28T06:55:35.294Z",
   "publishedAt": "0001-01-01T00:00:00Z",
   "entityId": "b4e020ce-343e-4443-9602-437535915438",
   "name": "sr2",
   "commitId": "commit-13bd1b6b-adf7-48d7-8374-bc5829764ffd",
-  "status": "tested",
+  "status": "draft",
   "lastVersion": "",
   "isLive": false,
   "commitInfo": {
@@ -59,18 +59,35 @@
   },
   "conditions": {
    "nodes": {
+    "rhs_gczq43": {
+     "value": null,
+     "sourceType": "globalVar",
+     "name": "",
+     "operator": "",
+     "dataType": "date",
+     "nodeType": "params",
+     "attribute": "globalDate",
+     "query": "",
+     "parent": "rule_02",
+     "children": null,
+     "leftNode": null,
+     "rightNode": null,
+     "siblingIndex": 1,
+     "returnType": ""
+    },
     "rule_01": {
      "value": null,
      "sourceType": "",
      "name": "",
-     "operator": "",
+     "operator": "and",
      "dataType": "",
      "nodeType": "group",
      "attribute": "",
      "query": "",
      "parent": "",
      "children": [
-      "rule_02"
+      "rule_02",
+      "c_tAaRVP"
      ],
      "leftNode": null,
      "rightNode": null,
@@ -113,20 +130,38 @@
      "siblingIndex": 1,
      "returnType": ""
     },
-    "rhs_gczq43": {
+    "c_tAaRVP": {
      "value": null,
-     "sourceType": "globalVar",
+     "sourceType": "",
+     "name": "",
+     "operator": "any",
+     "dataType": "date",
+     "nodeType": "condition",
+     "attribute": "",
+     "query": "",
+     "parent": "rule_01",
+     "children": null,
+     "leftNode": [
+      "lhs_RnGM0h"
+     ],
+     "rightNode": [],
+     "siblingIndex": 2,
+     "returnType": ""
+    },
+    "lhs_RnGM0h": {
+     "value": null,
+     "sourceType": "customInput",
      "name": "",
      "operator": "",
      "dataType": "date",
      "nodeType": "params",
-     "attribute": "globalDate",
+     "attribute": "date",
      "query": "",
-     "parent": "rule_02",
+     "parent": "c_tAaRVP",
      "children": null,
      "leftNode": null,
      "rightNode": null,
-     "siblingIndex": 1,
+     "siblingIndex": 2,
      "returnType": ""
     }
    },
@@ -182,7 +217,7 @@
    "dependencyVersion": "live",
    "isDeleted": false,
    "createdAt": "2025-11-28T06:43:44.373335Z",
-   "updatedAt": "2025-11-28T06:43:44.373335Z"
+   "updatedAt": "2025-11-28T06:57:08.372141Z"
   }
  ]
 }
